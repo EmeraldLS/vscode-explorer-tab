@@ -14,8 +14,15 @@ body {
   transition: all 0.3s;
 }
 
-.folder span {
+.folder > span {
   margin: 0 5x 2px 0;
+  display: flex;
+  background-color: #767676;
+  width: 40%;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  align-items: center;
 }
 
 .folder:hover {
@@ -26,6 +33,30 @@ body {
   margin: 5px 0;
 }
 
+.child {
+  transition: all 0.5s ease-in;
+}
+
 .hidden {
   display: none;
+}
+
+.buttons {
+  width: 150px;
+  display: flex;
+  margin-left: 20px;
+  gap: 5px;
+}
+
+input {
+  position: relative;
+  left: -23px;
+  margin-top: 5px;
+  width: 40%;
+  height: 22px;
+}
+
+input[type="radio"]:checked + label {
+  color: #f0f0f0;
+  background-color: #333;
 }
